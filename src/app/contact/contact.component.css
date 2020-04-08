@@ -1,0 +1,39 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 50vw;
+    justify-content: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+}
+
+.name, .phone {
+    width: 100%;
+    flex: 1;
+}
+
+.mail, .text {
+    display: inline-block;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+}

@@ -1,0 +1,14 @@
+h1 {
+    font-size: 52px;
+}
+
+p {
+    line-height: 32px;
+    font-size: 25px;
+    margin: 70px 150px;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+}
