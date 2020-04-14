@@ -1,0 +1,46 @@
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+.outer2 h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.outer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.inner3 {
+    max-width: 33%;
+    text-align: center;
+}
+
+img {
+    box-sizing: border-box;
+    box-shadow: 6px 9px 12px -3px rgba(0,0,0,0.75);
+}
+
+.inner3 h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inner3 p {
+    margin: 15px 20px;
+    font-size: 16px;
+}
+
+.inner3 a {
+    font-size: 20px;
+    color: black;
+}

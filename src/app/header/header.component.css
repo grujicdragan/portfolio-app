@@ -1,7 +1,8 @@
 *{  
     margin: 0;
     padding: 0;
-    box-sizing: border-box;            
+    box-sizing: border-box;
+    background-color: #e7e5e4;          
 }
 
 
@@ -29,7 +30,6 @@ header{
 ul {
     list-style: none;
     width: 100%;
-    cursor: pointer;
 }
 
 ul li {
@@ -45,6 +45,7 @@ ul li a{
     transition: all 1s ease 0s;
     color: black;
     display: inline-block;
+    cursor: pointer;
 }
 
 ul li:hover{

@@ -46,7 +46,7 @@ ul li a::before {
     height: 100%;
     width: 20px;
     background: #b1b1b1;
-    transition: .5;
+    transition: .5s;
     transform: rotate(0deg) skewY(-45deg);
 }
 
@@ -59,12 +59,13 @@ ul li a::after {
     width: 100%;
     background: #b1b1b1;
     transform: rotate(0deg) skewX(-45deg);
-    transition: .5;
+    transition: .5s;
 }
 
 ul li a:hover {
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
     box-shadow: -50px 50px 50px rgb(0 , 0, 0, 0.5);
+    cursor: pointer;
 }
 
 ul li a:hover .fa {
@@ -134,6 +135,5 @@ ul li:hover:nth-child(5) a:before {
 ul li:hover:nth-child(5) a:after {
     background: rgb(78, 78, 78);
 }
-
 
 
