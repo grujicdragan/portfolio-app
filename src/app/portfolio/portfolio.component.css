@@ -44,3 +44,12 @@ img {
     font-size: 20px;
     color: black;
 }
+
+.inner3 a i {
+    transition: all .7s ease 0s;
+}
+
+.inner3 a:hover i {
+    transform: scale(1.2, 1.2);
+    transition: all .7s ease 0s;
+}
