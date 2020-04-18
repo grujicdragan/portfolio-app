@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.1em;
 }
 
 header{
@@ -23,6 +23,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -52,10 +53,81 @@ ul li a:hover {
     transition: all .5s ease 0s;
 }
 
+.flex-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .icons {
     display: flex;
     justify-content: flex-end;
 }
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transition: 0.4s;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+
+    a {
+        font-size: 1em;
+    }
+    ul li {
+        margin: 0;
+    }
+    .icons {
+        display: inline-block;
+    }
+
+    .toggle-button {
+        display: flex;
+        align-self: end;
+    }
+
+    .flex-nav {
+        display: none;
+    }
+
+    .flex-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons.active {
+        display: none;
+    }
+
+    .toggle-button.active #bar2 {
+        background-color: transparent;
+    }
+
+    .toggle-button.active #bar1 {
+        transition: 0.4s;
+        transform: rotate(-45deg) translate(-8px, 6px) ;
+    }
+
+    .toggle-button.active #bar3 {
+        transform: rotate(45deg) translate(-6px, -6px) ;
+        transition: 0.4s;
+    }
+}
+
 
 
 

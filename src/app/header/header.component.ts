@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggle() {
+    const flexNav = document.getElementsByClassName('flex-nav')[0];
+    const icons = document.getElementsByClassName('icons')[0];
+    const x = document.getElementsByClassName('toggle-button')[0]
+
+    flexNav.classList.toggle('active');
+    icons.classList.toggle('active');
+    x.classList.toggle('active');
   }
 
   toHome() {

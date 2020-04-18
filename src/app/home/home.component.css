@@ -51,3 +51,16 @@ p {
     color: #131313;
     letter-spacing: .50em;
 }
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 46px;
+        padding: 0;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 0;
+    }
+}

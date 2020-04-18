@@ -56,3 +56,13 @@ html, body {
     height: 100vh;
     scroll-snap-align: center;
 }
+
+@media (max-width: 800px) {
+    #footer {
+        display: none;
+    }
+ 
+    #contact {
+        margin-top: 150vh;
+    }
+}

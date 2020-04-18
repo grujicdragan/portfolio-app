@@ -38,4 +38,21 @@ button {
     width: 50%;
 }
 
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .row1 {
+        flex-wrap: wrap;
+    }
+
+
+}
+
 

@@ -13,3 +13,19 @@ a {
     font-size: 20px;
     color: black;
 }
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 12px;
+        margin: 20px 20px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
