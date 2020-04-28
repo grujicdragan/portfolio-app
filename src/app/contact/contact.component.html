@@ -30,9 +30,11 @@
         </div>
         <div class="button">
             <button mat-raised-button
-                [disabled]="mail.invalid || name.invalid || phone.invalid || message.invalid">
-                SEND
+                [disabled]="mail.invalid || name.invalid || phone.invalid || message.invalid"
+                (click)="sendMail()">
+                {{ btnText }}
             </button>
         </div>
+        <div style="color: green;">{{ messageText }}</div>
     </form>
 </div>
