@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-// import { HttpService } from '../http.service';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 
 
 @Component({
@@ -11,9 +9,6 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class ContactComponent implements OnInit {
 
-  btnText = "SEND";
-  loading = false;
-  messageText = "";
 
   name = new FormControl('', [Validators.required]);
   phone = new FormControl('', [Validators.required]);
@@ -48,39 +43,9 @@ export class ContactComponent implements OnInit {
 
 
 
-  constructor(
-    private http: HttpClient,
-    // private service: HttpService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  // sendMail() {
-  //   this.loading = true;
-  //   console.log("Loading...");
-  //   this.btnText = "Sending...";
-  //   let contact = {
-  //     name: this.name.value,
-  //     phone: this.phone.value,
-  //     mail: this.mail.value,
-  //     message: this.message.value
-  //   }
-  //   this.service.sendEmail("http://localhost:3000/send", contact).subscribe(
-  //     data => {
-  //       let res: any = data;
-  //       console.log(`${contact.name} has sent you an email!`)
-  //     },
-  //     err => {
-  //       console.log(err);
-  //       this.loading = false;
-  //       this.btnText = "SEND";
-  //     }, () => {
-  //       this.loading = false;
-  //       console.log("Done loading.");
-  //       this.btnText = "SEND";
-  //       this.messageText = "Message sent."
-  //     }
-  //   );
-  // }
 }

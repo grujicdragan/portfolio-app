@@ -13,26 +13,26 @@
                 <mat-error *ngIf="phone.invalid">{{getErrorMessagePhone()}}</mat-error>
             </mat-form-field>
         </div>
-        <div >
+        <div>
             <mat-form-field appearance="outline" class="mail" hideRequiredMarker>
                 <mat-label>Email</mat-label>
-                <input matInput  placeholder="example@mail.com" [formControl]="mail" required>
+                <input matInput placeholder="example@mail.com" [formControl]="mail" required>
                 <mat-error *ngIf="mail.invalid">{{getErrorMessageMail()}}</mat-error>
             </mat-form-field>
         </div>
-        <div >
+        <div>
             <mat-form-field appearance="outline" class="text" hideRequiredMarker>
                 <mat-label>Message</mat-label>
-                <textarea matInput rows="6" required placeholder="Enter your message" [formControl]="message"></textarea>
+                <textarea matInput rows="6" required placeholder="Enter your message"
+                    [formControl]="message"></textarea>
                 <mat-error *ngIf="message.invalid">{{getErrorMessageMessage()}}</mat-error>
             </mat-form-field>
         </div>
         <div class="button">
             <button mat-raised-button
-            [disabled]="mail.invalid || name.invalid || phone.invalid || message.invalid"
-            
-            >{{btnText}}</button>
+                [disabled]="mail.invalid || name.invalid || phone.invalid || message.invalid">
+                SEND
+            </button>
         </div>
-        <div style="color: green;">{{ messageText }}</div>
     </form>
 </div>
