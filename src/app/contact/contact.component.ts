@@ -66,7 +66,7 @@ export class ContactComponent implements OnInit {
       mail: this.mail.value,
       message: this.message.value
     }
-    this.service.sendEmail("http://localhost:3000/send", contact).subscribe(
+    this.service.sendEmail("https://mail-control-app.herokuapp.com/send", contact).subscribe(
       data => {
         let res: any = data;
         console.log(`${contact.name} has sent you an email!`)
