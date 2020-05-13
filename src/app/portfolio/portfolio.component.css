@@ -62,9 +62,9 @@ img {
         font-size: 18px;
     }
     .image img {
-        width: 80vw !important;
+        width: 90vw !important;
         height: 30vh !important;
-        margin: 3em 0 30px 1em;
+        margin: 3em 0 3em;
     }
     .flex-item1 {
         flex-direction: column;
@@ -75,16 +75,19 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 1em 3em;
         font-size: 12px;
     }
     .text p {
         font-size: 12px;
         line-height: 14px;
-        margin: 10px 10px;
+        margin: 0 25px;
+        text-align: center;
     }
     .text a i {
         font-size: 30px;
         color: black;
+    }
+    carousel-control-prev {
+        font-size: 10px !important;
     }
 }
