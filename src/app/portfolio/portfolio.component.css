@@ -7,85 +7,84 @@
     box-sizing: border-box;
 }
 
-.outer2 h1 {
+.header h1 {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3%;
 }
 
-.outer2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 100%;
-}
-
-.inner3 {
-    max-width: 33%;
-    text-align: center;
-}
-
 img {
-    box-sizing: border-box;
-    box-shadow: 6px 9px 12px -3px rgba(0,0,0,0.75);
+    width: 600px !important;
+    height: 300px;
+    margin-left: 10em;
 }
 
-.inner3 h3 {
-    font-size: 20px;
-    font-weight: 600;
+.flex-item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 12em 10em 4em;
+    text-align: start;
 }
 
-.inner3 p {
-    margin: 15px 20px;
+.text {
     font-size: 16px;
-}
-
-.inner3 a {
-    font-size: 20px;
     color: black;
 }
 
-.inner3 a i {
+.text a i {
+    font-size: 40px;
+    transition: all .7s ease 0s;
+    color: black;
+    margin: 1em 4em;
+}
+
+.text a:hover i {
+    transform: scale(1.4, 1.4);
     transition: all .7s ease 0s;
 }
 
-.inner3 a:hover i {
-    transform: scale(1.2, 1.2);
-    transition: all .7s ease 0s;
+.carousel-control-prev {
+    color: black !important;
+    font-size: 2em;
+}
+
+.carousel-control-next {
+    color: black !important;
+    font-size: 2em;
 }
 
 @media (max-width: 800px) {
-
-    .outer2 {
+    .container-flex {
+        margin-top: 40%;
+    }
+    .header h1 {
+        font-size: 18px;
+    }
+    .image img {
+        width: 80vw !important;
+        height: 30vh !important;
+        margin: 3em 0 30px 1em;
+    }
+    .flex-item1 {
+        flex-direction: column;
+        margin: 0;
+    }
+    .text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .outer2 h1 {
-        font-size: 20px;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .inner3 {
-        max-width: 90%;
-    }
-
-    .inner3 h3 {
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .inner3 p {
+        margin: 1em 3em;
         font-size: 12px;
-        margin: 10px;
     }
-
-    .inner3 a i {
-        margin-bottom: 20px;
+    .text p {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 10px 10px;
+    }
+    .text a i {
+        font-size: 30px;
+        color: black;
     }
 }

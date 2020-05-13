@@ -4,9 +4,10 @@ h1 {
 }
 
 p {
-    line-height: 18px;
+    line-height: 23px;
     font-size: 18px;
     margin: 70px 150px;
+    text-align: start;
 }
 
 a {
@@ -18,13 +19,11 @@ a {
     h1 {
         font-size: 16px;
     }
-
     p {
         font-size: 12px;
         line-height: 12px;
         margin: 20px 20px;
     }
-
     a {
         font-size: 16px;
     }

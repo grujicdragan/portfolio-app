@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   toggle() {
     const flexNav = document.getElementsByClassName('flex-nav')[0];
-    const icons = document.getElementsByClassName('icons')[0];
+    const icons = document.getElementsByClassName('icons-i')[0];
     const x = document.getElementsByClassName('toggle-button')[0]
 
     flexNav.classList.toggle('active');
