@@ -11,8 +11,17 @@ p {
 }
 
 a {
+    text-decoration: none;
     font-size: 20px;
     color: black;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    transition: all 0.3s linear 0s;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
 }
 
 @media (max-width: 800px) {

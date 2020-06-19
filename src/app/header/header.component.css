@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(231, 229, 228, .7);
+    background-color: rgb(231, 229, 228, 0.7);
 }
 
 a {
@@ -32,7 +32,6 @@ ul {
 
 ul li {
     margin: 0 1rem;
-    transition: all .5s ease 0s;
     padding: 1rem;
     display: inline-block;
 }
@@ -40,15 +39,10 @@ ul li {
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .5s ease 0s;
     color: black;
     display: inline-block;
     cursor: pointer;
-}
-
-ul li a:hover {
-    transform: scale(1.2, 1.2);
-    transition: all .5s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .flex-nav {
@@ -56,14 +50,54 @@ ul li a:hover {
     justify-content: flex-start;
 }
 
+.flex-nav li a::after {
+    content: "";
+    display: block;
+    margin-top: 7px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+.flex-nav li a:hover::after {
+    width: 100%;
+    padding-left: 20px;
+    transition: width 0.3s;
+}
+
 .icons-i {
     display: flex;
     justify-content: flex-end !important;
+    transition: all 0.3s ease 0s;
+}
+
+.icons-i li:hover a {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.2, 1.2);
+}
+
+.icons-i li:hover:nth-child(1) a {
+    color: #3b5999;
+}
+
+.icons-i li:hover:nth-child(2) a {
+    background: linear-gradient(#400080, transparent), linear-gradient(180deg, #d047d1, #ff0000, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons-i li:hover:nth-child(3) a {
+    color: #0077bb;
+}
+
+.icons-i li:hover:nth-child(4) a {
+    color: black;
 }
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 0.75rem;
     right: 1rem;
     display: none;
     flex-direction: column;
