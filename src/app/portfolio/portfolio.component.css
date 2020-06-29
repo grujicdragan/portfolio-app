@@ -30,18 +30,31 @@ img {
 .text {
     font-size: 16px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.text a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    padding: 0.5em 1em;
+    margin: 10px 10px 0px 0px;
+    border: 1px solid black;
+    transition: all 0.3s linear 0s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.521);
+}
+
+.text a:hover {
+    color: white;
+    background-color: black;
 }
 
 .text a i {
-    font-size: 40px;
-    transition: all .7s ease 0s;
-    color: black;
-    margin: 1em 4em;
-}
-
-.text a:hover i {
-    transform: scale(1.4, 1.4);
-    transition: all .7s ease 0s;
+    margin-left: 10px;
 }
 
 .carousel-control-prev {
@@ -74,8 +87,15 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         font-size: 12px;
+        padding-bottom: 40px;
+        margin-top: -30px;
+    }
+    .text h1 {
+        text-align: center;
+        font-size: 18px;
+        margin: auto auto;
     }
     .text p {
         font-size: 12px;
@@ -83,11 +103,14 @@ img {
         margin: 0 25px;
         text-align: center;
     }
-    .text a i {
-        font-size: 30px;
-        color: black;
+    .text a {
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
     }
-    carousel-control-prev {
-        font-size: 10px !important;
+    .links {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
     }
 }
