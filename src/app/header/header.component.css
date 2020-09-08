@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(231, 229, 228, 0.7);
 }
 
 a {
@@ -23,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f0f0f0ad
 }
 
 ul {
