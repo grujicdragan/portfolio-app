@@ -6,25 +6,28 @@
 }
 
 form {
+    margin-left: 100px;
     width: 50vw;
     justify-content: center;
 }
 
-
 h1 {
     text-align: center;
+    margin-top: 60px;
 }
 
 .row1 {
     display: flex;
 }
 
-.name, .phone {
+.name,
+.phone {
     width: 100%;
     flex: 1;
 }
 
-.mail, .text {
+.mail,
+.text {
     display: inline-block;
     width: 100%;
 }
@@ -39,20 +42,14 @@ button {
 }
 
 @media (max-width: 800px) {
-
     h1 {
         font-size: 20px;
     }
-
     form {
         width: 90%;
+        margin: auto;
     }
-
     .row1 {
         flex-wrap: wrap;
     }
-
-
 }
-
-

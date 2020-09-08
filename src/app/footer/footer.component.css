@@ -3,19 +3,22 @@
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: stretch;
 }
 
 ul {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 ul li {
-    margin: -60px 80px 50px 30px;
     list-style: none;
     transition: .5s;
+    margin: 45px 120px 0px 0px;
 }
 
 ul li .fa {
@@ -33,7 +36,7 @@ ul li a {
     height: 40px;
     background-color: #fff;
     text-align: center;
-    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
     transition: .5s;
     box-shadow: -20px 20px 20px rgb(0, 0, 0, 0.5);
 }
@@ -64,7 +67,7 @@ ul li a::after {
 
 ul li a:hover {
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-    box-shadow: -50px 50px 50px rgb(0 , 0, 0, 0.5);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
@@ -72,68 +75,62 @@ ul li a:hover .fa {
     color: #fff;
 }
 
-
-ul li:hover:nth-child(1) a {
+ul li:hover:nth-child(3) a {
     background: #3b5999;
 }
 
-ul li:hover:nth-child(1) a:before {
+ul li:hover:nth-child(3) a:before {
     background: #2e4a86;
 }
 
-ul li:hover:nth-child(1) a:after {
+ul li:hover:nth-child(3) a:after {
     background: #4a69ad;
 }
 
-ul li:hover:nth-child(3) a {
+ul li:hover:nth-child(2) a {
     background: #0077bb;
 }
 
-ul li:hover:nth-child(3) a:before {
+ul li:hover:nth-child(2) a:before {
     background: #036aa0;
 }
 
-ul li:hover:nth-child(3) a:after {
+ul li:hover:nth-child(2) a:after {
     background: #0d82bf;
 }
 
-ul li:hover:nth-child(2) a {
-    background: linear-gradient(#400080, transparent),
-    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
-}
-
-ul li:hover:nth-child(2) a:before {
-    background: linear-gradient(#400080, transparent),
-    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
-}
-
-ul li:hover:nth-child(2) a:after {
-    background: linear-gradient(#400080, transparent),
-    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
-}
-
 ul li:hover:nth-child(4) a {
-    background: rgb(59, 255, 41);
+    background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 
 ul li:hover:nth-child(4) a:before {
-    background: rgb(6, 179, 0);
+    background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 
 ul li:hover:nth-child(4) a:after {
-    background: rgb(130, 255, 114);
+    background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
 }
 
 ul li:hover:nth-child(5) a {
-    background: rgb(61, 61, 61);
+    background: rgb(59, 255, 41);
 }
 
 ul li:hover:nth-child(5) a:before {
-    background: black;
+    background: rgb(6, 179, 0);
 }
 
 ul li:hover:nth-child(5) a:after {
-    background: rgb(78, 78, 78);
+    background: rgb(130, 255, 114);
 }
 
+ul li:hover:nth-child(1) a {
+    background: rgb(61, 61, 61);
+}
 
+ul li:hover:nth-child(1) a:before {
+    background: black;
+}
+
+ul li:hover:nth-child(1) a:after {
+    background: rgb(78, 78, 78);
+}

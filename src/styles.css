@@ -48,9 +48,9 @@ body {
 
 #contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     max-width: 100%;
     height: 100vh;
