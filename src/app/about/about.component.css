@@ -20,7 +20,7 @@
 }
 
 h1 {
-    margin: 65px 70px 0px 60%;
+    margin: 55px 70px 0px 60%;
     font-size: 24px;
     text-transform: uppercase;
     color: #333;
@@ -68,5 +68,15 @@ a:hover {
         display: inline-block;
         margin-top: 20px;
         margin-left: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    a {
+        font-size: 24px;
     }
 }

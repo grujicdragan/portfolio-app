@@ -21,7 +21,7 @@
 }
 
 img {
-    width: 600px !important;
+    width: 550px !important;
     height: 300px;
     margin-left: 10em;
 }
@@ -41,6 +41,11 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+}
+
+.text h1 {
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .text a {
@@ -83,7 +88,7 @@ img {
     }
     .image img {
         width: 90vw !important;
-        height: 30vh !important;
+        height: 28vh !important;
         margin: 3em 0 3em;
     }
     .flex-item1 {
@@ -94,7 +99,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
         font-size: 12px;
         padding-bottom: 40px;
         margin-top: -30px;
@@ -119,5 +124,22 @@ img {
         display: flex;
         width: 100vw;
         justify-content: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .image img {
+        width: 650px !important;
+        height: 350px !important;
+    }
+    .text {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .text h1 {
+        font-size: 36px;
+    }
+    .text a {
+        font-size: 26px;
     }
 }

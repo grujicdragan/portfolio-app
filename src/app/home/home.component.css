@@ -52,3 +52,12 @@ p {
         padding: 0;
     }
 }
+
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 102px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
