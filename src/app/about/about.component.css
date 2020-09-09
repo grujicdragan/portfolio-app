@@ -55,13 +55,14 @@ a:hover {
         background-color: rgba(226, 226, 226, 0.835);
     }
     h1 {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
         margin: 60px auto 0;
     }
     p {
-        font-size: 12px;
-        line-height: 12px;
-        margin: 20px 20px;
+        font-size: 13px;
+        line-height: 17px;
+        margin: 20px 20px 15px;
     }
     a {
         font-size: 16px;

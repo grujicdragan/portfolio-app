@@ -16,26 +16,28 @@ export class HeaderComponent implements OnInit {
     const flexNav = document.getElementsByClassName('flex-nav')[0];
     const icons = document.getElementsByClassName('icons-i')[0];
     const x = document.getElementsByClassName('toggle-button')[0]
+    const y = document.getElementsByClassName('navbar-1')[0]
 
     flexNav.classList.toggle('active');
     icons.classList.toggle('active');
     x.classList.toggle('active');
+    y.classList.toggle('active');
   }
 
   toHome() {
-    document.getElementById("home").scrollIntoView({behavior:"smooth"});
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
   }
 
   toAbout() {
-    document.getElementById("about").scrollIntoView({behavior:"smooth"});
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   }
 
   toPortfolio() {
-    document.getElementById("portfolio").scrollIntoView({behavior:"smooth"});
+    document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
   }
 
   toContact() {
-    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   }
 
 

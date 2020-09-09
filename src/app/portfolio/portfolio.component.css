@@ -80,11 +80,9 @@ img {
 }
 
 @media (max-width: 800px) {
-    .container-flex {
-        margin-top: 40%;
-    }
     .header h1 {
         font-size: 18px;
+        margin-top: 40%;
     }
     .image img {
         width: 90vw !important;

@@ -52,4 +52,7 @@ button {
     .row1 {
         flex-wrap: wrap;
     }
+    button {
+        width: 100%;
+    }
 }

@@ -24,6 +24,7 @@ header {
     align-items: center;
     background-color: #f0f0f0ad;
     box-shadow: 0px 1px 6px #adadad;
+    transition: height 1s;
 }
 
 ul {
@@ -48,6 +49,7 @@ ul li a {
 
 .flex-nav {
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
 }
@@ -96,6 +98,7 @@ ul li a {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .icons-i li:hover:nth-child(2) a {
@@ -129,6 +132,11 @@ ul li a {
 @media (max-width: 800px) {
     .navbar-1 {
         background-color: #f0f0f0c5;
+        transition: height 1s;
+    }
+    .navbar-1.active {
+        height: 220px;
+        transition: height 1s;
     }
     .icons-i li {
         transform: translateX(0px);
@@ -140,6 +148,7 @@ ul li a {
         margin: 0;
     }
     .icons-i {
+        width: 100%;
         display: inline-block;
     }
     .toggle-button {
@@ -152,6 +161,7 @@ ul li a {
     .flex-nav.active {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     .icons-i.active {
         display: none;
