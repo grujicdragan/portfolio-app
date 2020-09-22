@@ -51,6 +51,9 @@ a:hover {
 }
 
 @media (max-width: 800px) {
+    .about-banner {
+        background-attachment: scroll;
+    }
     .about {
         background-color: rgba(226, 226, 226, 0.835);
     }

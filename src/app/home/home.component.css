@@ -76,6 +76,12 @@ p {
 }
 
 @media (max-width: 800px) {
+    .home-banner {
+        background-attachment: scroll;
+    }
+    .scroll-btn {
+        bottom: 70px;
+    }
     h1 {
         font-size: 46px;
         padding: 0;

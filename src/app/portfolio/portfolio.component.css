@@ -80,6 +80,9 @@ img {
 }
 
 @media (max-width: 800px) {
+    .container-flex {
+        background-attachment: scroll;
+    }
     .header h1 {
         font-size: 18px;
         margin-top: 40%;
